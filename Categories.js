@@ -13,12 +13,7 @@ import styles from "./Appstyle";
 export default function Categories({ navigation }) {
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={(styles.largeHeading, styles.headingColor)}>Categories</Text>
-      <Button title="Go to Home" onPress={() => navigation.navigate("Home")} />
-      <Button
-        title="Go to Details"
-        onPress={() => navigation.navigate("Details")}
-      />
+      <Text style={styles.largeHeading}>List of Students</Text>
     </SafeAreaView>
   );
 }

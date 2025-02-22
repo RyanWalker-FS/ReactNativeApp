@@ -4,30 +4,18 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#fff",
-    alignItems: "flex-start",
-    justifyContent: "flex-start",
+    alignItems: "center",
   },
   largeHeading: {
-    fontSize: 80,
-    fontStyle: "italic",
+    fontSize: 30,
+
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
   },
   listcontainer: {
     flexGrow: 0,
     flexShrink: 0,
-  },
-  headingColor: {
-    ...Platform.select({
-      android: {
-        color: "yellow",
-      },
-      ios: {
-        color: "red",
-        fontSize: 80,
-      },
-      default: {
-        color: "blue",
-      },
-    }),
   },
 });
 
