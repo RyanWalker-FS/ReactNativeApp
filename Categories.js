@@ -10,7 +10,7 @@ import {
 } from "react-native";
 import styles from "./Appstyle";
 
-export default function Categories({ navigation }) {
+export default function Categories({}) {
   return (
     <SafeAreaView style={styles.container}>
       <Text style={styles.largeHeading}>List of Students</Text>

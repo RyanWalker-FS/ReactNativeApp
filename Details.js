@@ -139,23 +139,23 @@ const Categories = () => {
     <View style={styles.container}>
       <Text style={styles.header}>Students and Classes</Text>
 
-      <View style={styles.formContainer}>
+      <View style={styles.inputContainer}>
         <TextInput
-          style={styles.inputField}
+          style={{ color: "white", fontSize: 20, margin: 10 }}
           placeholder="Student Name"
           placeholderTextColor="#aaa"
           value={values.studentName}
           onChangeText={(text) => handleInputChange("studentName", text)}
         />
         <TextInput
-          style={styles.inputField}
+          style={{ color: "white", fontSize: 20, margin: 10, marginTop: 20 }}
           placeholder="Class Name"
           placeholderTextColor="#aaa"
           value={values.className}
           onChangeText={(text) => handleInputChange("className", text)}
         />
 
-        <TouchableOpacity style={styles.buttonContainer} onPress={handleSubmit}>
+        <TouchableOpacity style={styles.button} onPress={handleSubmit}>
           <Text style={styles.buttonText}>Submit</Text>
         </TouchableOpacity>
       </View>
@@ -182,16 +182,24 @@ const Categories = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#1a1a1a", // Dark metallic gray (Warhammer theme)
+    backgroundColor: "#1a1a1a",
     padding: 16,
     alignItems: "center",
     justifyContent: "flex-start",
   },
 
   header: {
-    fontSize: 28,
+    fontSize: 30,
     fontWeight: "bold",
     color: "#fff",
+  },
+  button: {
+    backgroundColor: "#4F8EF7",
+    padding: 10,
+    borderRadius: 5,
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: 20,
   },
 });
 
